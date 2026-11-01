@@ -1,0 +1,318 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approved Applicants | BHP</title>
+    <style>
+        /* COLOR PALETTE */
+        :root {
+            --bhp-orange: #FF9800;
+            --bhp-navy: #1a237e;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+        }
+
+        body { margin: 0; font-family: 'Arial', sans-serif; background: var(--white); color: #333; }
+
+        /* NAVIGATION BAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background: var(--white);
+            border-bottom: 3px solid var(--bhp-orange);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo img { height: 35px; }
+        .nav-links a { margin-left: 20px; text-decoration: none; color: #333; font-weight: bold; font-size: 14px; }
+
+        /* HERO HEADER SECTION */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.bhp.com/-/media/project/bhp1ip/bhp-com-en/images/_primary-banner/2023/230523_homepageloop.jpg');
+            background-size: cover; background-position: center;
+            height: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 { font-size: 32px; max-width: 800px; }
+
+        /* REGISTRY TITLE AREA */
+        .registry-header {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--light-gray);
+        }
+        .registry-header h2 { color: var(--bhp-navy); font-size: 26px; margin: 0; }
+        .registry-header p { font-size: 14px; color: #666; margin-top: 10px; }
+
+        /* APPLICANT GRID (6 APPLICANTS) */
+        .container { padding: 40px 5%; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-top: 6px solid var(--bhp-orange);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .card:hover { transform: translateY(-5px); }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%; /* CIRCLE SHAPE */
+            object-fit: cover;
+            border: 4px solid var(--bhp-navy);
+            margin-bottom: 15px;
+        }
+
+        .name { font-size: 20px; font-weight: 900; color: var(--bhp-navy); margin-bottom: 10px; }
+        
+        .info-list {
+            text-align: left;
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+        .info-list strong { color: var(--bhp-navy); }
+
+        .status-badge {
+            display: inline-block;
+            margin-top: 20px;
+            background: #2e7d32;
+            color: var(--white);
+            padding: 8px 25px;
+            border-radius: 25px;
+            font-weight: bold;
+            font-size: 12px;
+            letter-spacing: 1px;
+        }
+
+        /* CEO SECTION */
+        .ceo-section {
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+        .ceo-section blockquote { font-style: italic; font-size: 18px; color: #555; max-width: 700px; margin: 0 auto 20px; }
+        .ceo-img { width: 100px; height: 100px; border-radius: 50%; margin-top: 15px; }
+
+/* FOOTER */
+        footer {
+            background: var(--bhp-navy);
+            color: var(--white);
+            padding: 40px 5%;
+            text-align: center;
+        }
+        footer a { color: var(--bhp-orange); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="https://www.bhp.com/-/media/project/bhp1ip/bhp1ip-en/bhp-orange.png" alt="BHP Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Applicants</a>
+            <a href="#">About Us</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>BHP GROUP - MINERALS & MINING DIVISION</h1>
+        <p>Providing materials critical to the future.</p>
+    </div>
+
+    <div class="registry-header">
+        <h2>Official Registry of Approved Applicants (2026)</h2>
+        <p>The following individuals have successfully completed the visa and work permit verification process.</p>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            
+            <div class="card">
+                <img src="pic1.jpg" class="profile-img">
+                <div class="name">SELAM MENGESTU ADAM</div>
+                <div class="info-list">
+                    <strong>Age:</strong> 29<br>
+                    <strong>Passport Number:</strong> Ep1234566<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-001
+                </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+            <div class="card">
+                <img src="pic15.jpg" class="profile-img">
+                <div class="name"> GIZE NEBERGA HABTEWOLD </div>
+                <div class="info-list">
+                    <strong>Age:</strong> 24 <br>
+                 <br>
+                    <strong>Passport Number:</strong> EQ1913580
+            <br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-001
+                </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+                <div class="card">
+                <img src="pic25.jpg" class="profile-img">
+                <div class="name">AYINKAW MEKEETE kASSIE </div>
+                <div class="info-list">
+                    <strong>Age:</strong> 27
+                                      
+                    <strong>Passport Number:</strong> Eq3377847<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-001
+              </div>
+                <div class="status-badge">APPROVED</div>
+            </div>  
+            <div class="card">
+                <img src="pic3.jpg" class="profile-img">
+                <div class="name">BIRUK TEFERA KUMIE</div>
+                <div class="info-list">
+                    <strong>Age:</strong> 22 <br>
+                    <strong>Passport Number:</strong> Ep1123467<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-002
+                </div>
+                <div class="status-badge">APPROVED</div>
+            </div> 
+            <div class="card">
+                <img src="pic2.jpg" class="profile-img">
+                <div class="name">HABTAMU KASHUN BAYE</div>
+                <div class="info-list">
+                    <strong>Age:</strong> 29<br>
+                    <strong>Passport Number:</strong> Ep123447<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-002
+                </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+            <div class="card">
+                <img src="pic4.jpg" class="profile-img">
+                <div class="name">HAGOS MEHARI AMANUEL</div>
+                <div class="info-list">
+                    <strong>Age:</strong> 24<br>
+                    <strong>Passport Number:</strong> Ep1234566<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-005
+
+</div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+            <div class="card">
+                <img src="pic5.jpg" class="profile-img">
+                <div class="name">SAMUEL KIRUBEL NEGA</div>
+                <div class="info-list">
+                    <strong>Age:</strong> 22 <br>
+                    <strong>Passport Number:</strong> Ep1234566<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-005
+                </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+
+            <div class="card">
+                <img src="pic6.jpg" class="profile-img">
+                <div class="name">BURTUKAN LETA MERA </div>
+                <div class="info-list">
+                    <strong>Age:</strong>24<br>
+                    <strong>Passport Number:</strong> Ep6995843<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-007
+
+</div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+              <div class="card">
+                <img src="pic17.jpg" class="profile-img">
+                <div class="name">ABEBA ADHANOM GEBRU</div>
+                <div class="info-list">
+                    <strong>Age:</strong>40<br>
+                    <strong>Passport Number:</strong>EQ2279391<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-007
+                </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+            
+                   <div class="card">
+                <img src="pic18.jpg" class="profile-img">
+                <div class="name">HABTIE AYELE BEKELL </div>
+                <div class="info-list">
+                    <strong>Age:</strong>24<br>
+                    <strong>Passport Number:</strong> E00859767<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-007
+                           </div>
+                <div class="status-badge">APPROVED</div>
+                </div>
+    
+                            <div class="card">
+                <img src="pic19.jpg" class="profile-img">
+                <div class="name"></div>ABAYNESH SHAFI TOLA  </div>
+                <div class="info-list">
+                    <strong>Age:</strong>24<br>
+                    <strong>Passport Number:</strong> Ep9118866<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-007
+                            </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+                                  <div class="card">
+                <img src="pic26.jpg" class="profile-img">
+                <div class="name">SIMEGN ACHEMO AMBACHEW </div>
+                <div class="info-list">
+                    <strong>Age:</strong>24<br>
+                    <strong>Passport Number:</strong>EP0000416<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-007
+                            </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+                                    <div class="card">
+                <img src="pic20.jpg" class="profile-img">
+                <div class="name">YOHANNES BAMLAKU FEKADU </div>
+                <div class="info-list">
+                    <strong>Age:</strong>25<br>
+                    <strong>Passport Number:</strong>EQ2345678<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-007
+                            </div>
+                <div class="status-badge">APPROVED</div>
+            </div>
+                                      <div class="card">
+                <img src="pic7.jpg" class="profile-img">
+                <div class="name">SEYUM MEHARI BOGALE</div>
+                <div class="info-list">
+                    <strong>Age:</strong>38<br>
+
+<strong>Passport Number:</strong> EQ3445678<br>
+                    <strong>Verification ID:</strong> BHP-CAN-2026-007
+                            </div>
+                <div class="status-badge">APPROVED</div>
+            </div>  
+    <div class="ceo-section">
+        <blockquote>"Mining is an industry for today and tomorrow. At BHP, we are already providing materials and jobs critical to the future."</blockquote>
+        <img src="https://www.bhp.com/-/media/project/bhp1ip/bhp1ip-en/image-5.png" class="ceo-img">
+        <p><strong>Mike Henry</strong><br>CEO, BHP Group</p>
+    </div>
+
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:bhpgroupmineralminingcompany@gmail.com">bhpgroupmineralminingcompany@gmail.com</a></p>
+        <p>Toronto, ON, Canada</p>
+        <p>© BHP 2026 | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
